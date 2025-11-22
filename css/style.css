@@ -1,33 +1,112 @@
-
 body {
-    margin:0; padding:0;
+    margin: 0;
+    background: #0d0d0d;
+    color: #fff;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1e90ff, #003d7a);
-    color:white;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
-.container { text-align:center; }
-button {
-    padding:12px 25px;
-    margin:10px;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:18px;
+
+/* LOGO */
+.logo {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #00ffe0;
+    text-shadow: 0 0 8px #00ffe0;
 }
-.play { background:#4caf50; color:white; }
-.board {
-    display:grid;
-    grid-template-columns:repeat(3, 80px);
-    gap:5px;
-    margin-top:20px;
+
+/* CARROSSEL */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
 }
-.cell {
-    width:80px;
-    height:80px;
-    background:white;
-    border-radius:8px;
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 10s infinite;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+/* BOTÕES */
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.primary {
+    background: #00ffe0;
+    color: #000;
+    box-shadow: 0 0 10px #00ffe0;
+}
+
+.secondary {
+    border: 2px solid #00ffe0;
+    color: #00ffe0;
+}
+
+/* JOGO RECOMENDADO */
+.featured-box {
+    padding: 20px;
+}
+
+.featured-game {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.featured-game img {
+    width: 95px;
+    height: 95px;
+    border-radius: 12px;
+}
+
+/* MENU INFERIOR */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #111;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    border-top: 2px solid #00ffe0;
+}
+
+.bottom-menu a {
+    color: #999;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.bottom-menu a.active {
+    color: #00ffe0;
+    font-weight: bold;
 }
