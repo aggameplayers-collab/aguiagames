@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aguia Games</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguia Gameplay</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container">
-    <h1>Aguia Games</h1>
-    <button onclick="alert('Login ainda não disponível');">Entrar / Criar Conta</button>
-    <a href="game.html"><button class="play">Jogar Agora</button></a>
-</div>
+
+    <header>
+        <h1 class="logo">🦅 Aguia Gameplay</h1>
+    </header>
+
+    <!-- Banner com carrossel -->
+    <section class="carousel">
+        <div class="slides">
+            <img src="https://i.imgur.com/eZh6L7U.png">
+            <img src="https://i.imgur.com/WhHnE9x.png">
+            <img src="https://i.imgur.com/VOvRFq4.png">
+        </div>
+    </section>
+
+    <!-- Botões principais -->
+    <section class="cta-buttons">
+        <a href="#" class="btn primary">Entrar / Criar Conta</a>
+        <a href="game.html" class="btn secondary">🎮 Jogar Agora</a>
+    </section>
+
+    <!-- Jogo recomendado -->
+    <section class="featured-box">
+        <h2>🔥 Jogo Recomendado</h2>
+
+        <div class="featured-game">
+            <img src="https://i.imgur.com/WhHnE9x.png">
+
+            <div class="game-info">
+                <h3>Jogo da Velha VS IA</h3>
+                <p>Desafie a inteligência artificial e ganhe moedas!</p>
+                <a href="game.html" class="btn small">Jogar ▶</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu inferior -->
+    <nav class="bottom-menu">
+        <a href="#" class="active">🏠 Início</a>
+        <a href="#">🔥 Games</a>
+        <a href="#">👤 Perfil</a>
+    </nav>
+
 </body>
 </html>
